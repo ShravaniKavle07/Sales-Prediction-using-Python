@@ -1,115 +1,127 @@
-📊 Sales Prediction Using Python
+<p align="center">
+  <img src="https://img.icons8.com/color/96/000000/sales-performance.png" alt="Project Logo"/>
+</p>
 
-A Machine Learning Project for Forecasting Sales
+<h1 align="center">📈 Sales Prediction Using Python & Machine Learning</h1>
 
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python" /> <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" /> <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?logo=scikitlearn" /> <img src="https://img.shields.io/badge/Status-Completed-brightgreen" /> </p>
-🚀 Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Machine%20Learning-Linear%20Regression%20%7C%20Random%20Forest-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge"/>
+</p>
 
-This project builds a machine learning model to predict sales based on advertising spending across different channels.
-The notebook includes:
+---
 
-Exploratory Data Analysis (EDA)
+##  **Project Overview**
 
-Visualizations
+This project aims to predict **Sales** based on advertising budgets in **TV, Radio, and Newspaper** using machine learning techniques.  
+The dataset used is the popular **Advertising.csv**, which contains marketing spend across 200 observations.
 
-Feature Engineering
+Machine Learning Models used:
 
-Linear Regression Model
+- **Linear Regression**
+- **Random Forest Regressor**
 
-Model Evaluation (R², RMSE, MAE)
+Both models were evaluated using:
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+- Actual vs Predicted Visualizations
 
-Final Sales Predictions
+---
 
-Everything is implemented in Python using Jupyter Notebook.
-
-Project Structure
-Sales-Prediction-Using-Python
-│
+##  **Project Structure**
 ├── README.md
-├── sales_prediction_using_python.ipynb
 ├── Advertising.csv
-└── assets/
-      └── (optional images or logo)
-
- Tech Stack
-Tool	Purpose
-Python	Programming
-Pandas, NumPy	Data processing
-Matplotlib, Seaborn	Visualizations
-Scikit-Learn	Machine Learning
-Jupyter Notebook	Notebook environment
+├── sales_prediction_using_python.ipynb
+├── streamlit_app.py
+└── requirements.txt
 
 
- Dataset
 
-File Name: Advertising.csv
-Features:
+---
 
-TV Advertising Spend
+##  **Features**
+✔ Clean data preprocessing  
+✔ Train-test split  
+✔ Linear Regression & Random Forest models  
+✔ Performance evaluation  
+✔ Visualization of predictions  
+✔ Interactive **Streamlit Web App**  
+✔ Ready for deployment on Render / HuggingFace Spaces  
 
-Radio Advertising Spend
+---
 
-Newspaper Advertising Spend
+##  **Installation & Setup**
 
-Sales (Target Variable)
-
-Used to analyze the influence of marketing investments on sales performance.
-
- Workflow
-✔ 1. Data Import & Cleaning
-✔ 2. Exploratory Data Analysis
-
-Heatmaps
-
-Pairplots
-
-Correlation Study
-
-✔ 3. Feature Engineering
-✔ 4. Model Building (Linear Regression)
-✔ 5. Model Evaluation
-
-MAE
-
-MSE
-
-RMSE
-
-R² Score
-
- 6. Prediction on Test Data
- How to Run
+### 
 1️ Clone the Repository
-git clone https://github.com/ShravaniKavle07/sales-prediction-python.git
-cd sales-prediction-python
 
-2️ Install Dependencies
+git clone https://github.com/ShravaniKavle07/Sales-Prediction-ML.git
+cd Sales-Prediction-ML
+
+2️ Install Required Libraries
+bash
+Copy code
 pip install -r requirements.txt
 
-3️ Run the Notebook
+3️ Run the Jupyter Notebook
 jupyter notebook
 
+4️ Run the Streamlit App
+streamlit run streamlit_app.py
 
-Open:
-sales_prediction_using_python.ipynb
 
-Future Enhancements
+##  **Model Performance**
+- Linear Regression
 
-Add Random Forest & XGBoost
+MAE: 1.46
+RMSE: 1.78
+R² Score: 0.899
 
-Hyperparameter Tuning
+- Random Forest Regressor
 
-Streamlit Web App
+MAE: 0.83
+RMSE: 1.109
+R² Score: 0.961
+Random Forest performed best, providing 96% accuracy and a much lower error rate.
 
-Deployment on Render / HuggingFace Spaces
+##  **Visualizations**
+✔ Actual vs Predicted (Linear Regression)
+Shows how closely the model fits the trend.
 
- Author
+✔ Actual vs Predicted (Random Forest)
+Almost a perfect diagonal line — minimal error.
 
-Shravani Kavle
- GitHub: https://github.com/ShravaniKavle07
+##  **Tech Stack Used**
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Streamlit
 
- LinkedIn: https://llinkedin.com/in/shravanikavle07
 
- Support
+ ##  **Streamlit App Preview**
+Your Streamlit app allows users to input:
 
-If you found this project useful, please star the repo ⭐
+TV Budget
+Radio Budget
+Newspaper Budget
+And immediately get a sales prediction with a clean UI.
+
+##  **Future Enhancements**
+Add additional ML models (XGBoost, LightGBM)
+Hyperparameter tuning using GridSearchCV
+- Deploy full dashboard using Streamlit Cloud
+- Add time series forecasting
+- Add SHAP (Explainable AI) visualizations
+- Add automated outlier detection
+
+## **Contributing**
+Pull requests are welcome.
+For major changes, please open an issue for discussion first.
+
+License
+This project is licensed under the MIT License.
