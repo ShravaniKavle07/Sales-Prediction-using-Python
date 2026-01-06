@@ -32,10 +32,10 @@ Both models were evaluated using:
 ---
 
 ##  **Project Structure**
-├── README.md
-├── Advertising.csv
-├── sales_prediction_using_python.ipynb
-├── streamlit_app.py
+├── README.md                                                                                   
+├── Advertising.csv                                                                             
+├── sales_prediction_using_python.ipynb                                                         
+├── streamlit_app.py                                                                            
 └── requirements.txt
 
 
